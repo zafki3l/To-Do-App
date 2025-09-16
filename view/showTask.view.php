@@ -3,6 +3,7 @@
 include_once '../actions/getAllTask.actions.php';
 
 $taskList = $tasks;
+
 ?>
 
 <!DOCTYPE html>
@@ -16,6 +17,7 @@ $taskList = $tasks;
     <!-- Hiển thị list task -->
     <table border="1">
         <tr>
+            <th>Task ID</th>
             <th>Task Name</th>
             <th>Status</th>
             <th>Created At</th>
@@ -24,6 +26,7 @@ $taskList = $tasks;
         </tr>
             <?php foreach ($taskList as $task): ?>
                 <tr>
+                    <td><?php echo htmlspecialchars($task['id']) ?></td>
                     <td><?php echo htmlspecialchars($task['task_name']) ?></td>
                     <td><?php echo htmlspecialchars($task['status'] == 1 ? 'In process' : 'Completed') ?></td>
                     <td><?php echo htmlspecialchars($task['created_at']) ?></td>
