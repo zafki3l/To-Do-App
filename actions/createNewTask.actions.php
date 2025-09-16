@@ -2,7 +2,7 @@
 
 include_once '../controller/taskController.controller.php';
 
-$task = $_POST['task'];
+$tasks = $_POST['task'];
 
-$createTask = new TaskController($task);
+$createTask = new TaskController($tasks);
 $createTask->create();

@@ -32,8 +32,8 @@ $taskList = $tasks;
                     <td><?php echo htmlspecialchars($task['created_at']) ?></td>
                     <td><?php echo htmlspecialchars($task['updated_at']) ?></td>
                     <td>
-                        <a href="#">Edit</a>
-                        <a href="#">Delete</a>
+                        <a href="edit.view.php?id=<?php echo htmlspecialchars($task['id']) ?>">Edit</a>
+                        <a href="../actions/deleteTask.actions.php?id=<?php echo htmlspecialchars($task['id']) ?>">Delete</a>
                     </td>
                 </tr>
             <?php endforeach; ?>
