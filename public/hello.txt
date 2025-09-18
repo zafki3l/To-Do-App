@@ -1,0 +1,31 @@
+todo_app/
+├─ actions/
+│  ├─ createNewTask.actions.php
+│  ├─ deleteTask.actions.php
+│  ├─ editTask.actions.php
+│  ├─ getAllTask.actions.php
+│  └─ getEditTask.actions.php
+├─ config/
+│  ├─ app.config.php
+│  └─ database.config.php
+├─ controller/
+│  └─ taskController.controller.php
+├─ migrations/
+│  ├─ 20250915172424_create_todo_database.php
+│  ├─ 20250915174418_create_task_table.php
+│  ├─ 20250915192338_add_status_to_task.php
+│  └─ create.ps1
+├─ model/
+│  └─ task.model.php
+├─ public/
+│  ├─ css/
+│  │  └─ index.css
+│  ├─ js/
+│  └─ hello.txt
+├─ view/
+│  ├─ createTask.view.php
+│  ├─ edit.view.php
+│  ├─ index.view.php
+│  └─ showTask.view.php
+├─ .gitignore
+└─ index.php

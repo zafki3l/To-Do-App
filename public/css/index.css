@@ -1,0 +1,27 @@
+* {
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #ca122f;
+    display: flex;
+    margin-top: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    align-items: center;
+    justify-content: center;
+    background: #faf9ea;
+    width: auto;
+    height: auto;
+    border-radius: 16px;
+    padding: 20px 20px;
+}
+
+.container h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

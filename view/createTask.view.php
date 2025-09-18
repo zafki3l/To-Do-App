@@ -8,11 +8,10 @@
 <body>
     <!-- Nhập task mới -->
     <form action="../actions/createNewTask.actions.php" method="post">
-        <label for="task">New task:</label>
         <br>
-        <input type="text" name="task" id="task" placeholder="Task">
+        <input type="text" name="task" id="task" placeholder="Enter a task...">
         <br>
-        <input type="submit">
+        <button type="submit">Add task</button>
     </form>
 </body>
 </html>
